@@ -31,6 +31,8 @@ public enum IrbFileType {
 				return t;
 			}
 		}
-		throw new RuntimeException("unknown IrbFileType: '" + content + "'");
+		// throw new RuntimeException("unknown IrbFileType: '" + content + "'");
+		System.out.println("Warning: unknown IrbFileType: " + content); // Eugene added code
+		return null;
 	}
 }
